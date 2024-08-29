@@ -1,0 +1,75 @@
+/* Add some basic styling to our layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #333;
+    color: #121212;
+    padding: 1em;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: hsl(0, 13%, 88%);
+    text-decoration: none;
+    transition: color 0.2s ease; /* add a transition effect to our links */
+  }
+  
+  nav a:hover {
+    color: #e51111;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+  }
+  
+  section {
+    background-color: #f7f7f7;
+    padding: 2em;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border:2px solid black; */
+
+  }
+  section :hover{
+    border-radius: 7px;
+    background-color: rgb(224, 220, 220);
+  }
+  
+  section h2 {
+    margin-top: 0;
+    border-radius: 5%;
+  }
+  
+  /* Add an animation to our hero section */
+  #hero {
+    animation: fade-in 2s ease; /* define the animation */
+  }
+  
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
